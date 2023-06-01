@@ -1,0 +1,28 @@
+Instalacja debiana 
+
+	0.	Mam już zainstalowany program VirtualBox na moim komputerze.
+	0.	Pobieram plik instalacyjny ze strony https://www.debian.org/index.pl.html.
+	0.	Uruchamiam VirtualBox i tworzę nową maszynę o nazwie "DebianSop” z wybranym typem systemu Linux i wersją Debian 64-bit
+	0.	Zgodnie z zaleceniami na stronie Debiana, przydzielam maszynie 1024 MB pamięci RAM, aby zainstalować system bez interfejsu graficznego.
+	0.	Tworzę nowy wirtualny dysk twardy o pojemności 10 GB.
+	0.	Wybieram standardowy typ dysku VDI, ponieważ nie planuję przenosić maszyny między różnymi programami do wirtualizacji.
+	0.	Wybieram stały rozmiar dysku, ponieważ zapewnia on sprawniejsze działanie maszyny. Jeśli miałbym mało miejsca na komputerze, wybrałbym dynamicznie przydzielany rozmiar.
+	0.	W ustawieniach Ogólne -> Zaawansowane, włączam dwukierunkowe przeciąganie i upuszczanie oraz dwukierunkowy schowek, aby móc łatwo przenosić pliki między maszyną wirtualną a hostem.
+	0.	Nie używam szyfrowania dysku, ponieważ ta maszyna jest tylko do mojego użytku i nie przechowuję tam danych poufnych.
+	0.	Nie zmieniam nic w zakładce "Podstawowe" i "Opis".
+	0.	W zakładce System -> Płyta główna, odznaczam opcję dyskietki, ponieważ nie będę z niej korzystać. Ustawiam kolejność bootowania tak, aby najpierw uruchamiał się dysk twardy, a potem napęd optyczny. Pozostawiam domyślny chipset PIIX3, który jest odpowiedni dla mojego systemu.
+	0.	W zakładce System Procesor, ustawiam liczbę procesorów na 1, ponieważ nie będę potrzebować większej mocy. Pozostawiam wykorzystanie procesora na 100%. Włączam PAE/NX, aby mieć dostęp do tej funkcji wewnątrz maszyny.
+	0.	W zakładce Audio, wyłączam dźwięk, ponieważ nie będzie mi on potrzebny 
+	0.	W zakładce Sieć, wybieram kartę sieciową typu NAT, aby maszyna mogła uzyskać dostęp do Internetu.
+	0.	W zakładce Porty, nie wprowadzam żadnych zmian, ponieważ nie potrzebuję przekierowywać portów w tej maszynie.
+	0.	W zakładce USB, pozostawiam domyślne ustawienia, chyba że zamierzam korzystać z urządzeń USB w maszynie wirtualne
+Instalacja debiana
+	1.	Wybieram utworzoną maszynę wirtualną „DebianSop” i klikam na przycisk "Uruchom", aby rozpocząć instalację.
+	2.	Wskazuję ścieżkę do pobranego pliku instalacyjnego Debian.
+	3.	Wybierma instalację bez interfejsu graficznego
+	4.	Wybieram język instalacji na Angielski , strefę czasową na Polskę, układ klawiatury i inne preferencje według moich potrzeb.
+	5.	Nadaje nazwę użytkownika i hasło, nie potrzebuje nadawać domeny, oraz potem ustawiam hasło do konta root (admin)
+	6.	Podczas partycjonowania dysku, wybieram opcję automatycznego partycjonowania, jeśli nie mam specjalnych wymagań dotyczących rozmiarów partycji.
+	7.	Wybieram partycję, na której zostanie zainstalowany system, oraz punkt montowania "/".
+	8.	Wybieram nazwę hosta dla mojej maszyny i ustawiam nazwę użytkownika oraz hasło.
+	9.	Wybieram oprogramowanie, które chcę zainstalować. W przypadku standardowej instalacji można zaznaczyć domyślne opcje.

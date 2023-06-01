@@ -1,0 +1,7 @@
+PATH = przechowuje sciezki do katalogow gdzie zlokalizowane sa programy abysmy mogli wzywac ich globalnie
+RANDOM = zmienna do generowania liczb losowych
+PWD = Przechowuje aktualna sciezke 
+PS1 = Przechowuje konfiguracje promtu uzytkownika
+USER = Przechowuje nazwe aktualnego uzytkownika
+HOSTNAME = Przechowuje nazwe serwera
+OSTYPE = Przechowuje rodzaj systemu operacyjnego

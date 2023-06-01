@@ -1,0 +1,1 @@
+Komenda X=$(ls -l) odpali pod powloke wykona polecenie ls -l i zapisze jej strumien wyjscie do zmiennej X
