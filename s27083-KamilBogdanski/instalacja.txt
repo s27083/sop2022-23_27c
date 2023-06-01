@@ -1,0 +1,30 @@
+
+1. Mam juz zainstalowany program VirtualBox na moim komputerze.
+2. Pobieram plik instalacyjny ze strony https://www.debian.org/index.pl.html.
+3. Uruchamiam VirtualBox i tworze nowa maszyne o nazwie "DebianSop" z wybranym typem systemu Linux i wersja Debian 64-bit.
+4. Zgodnie z zaleceniami na stronie Debiana, przydzielam maszynie 1024 MB pamieci RAM, aby zainstalowac system bez interfejsu graficznego.
+5. Tworze nowy wirtualny dysk twardy o pojemnosci 10 GB.
+6. Wybieram standardowy typ dysku VDI, poniewaz nie planuje przenosic maszyny miedzy roznymi programami do wirtualizacji.
+7. Wybieram staly rozmiar dysku, poniewaz zapewnia on sprawniejsze dzialanie maszyny. Jesli mialbym malo miejsca na komputerze, wybralbym dynamicznie przydzielany rozmiar.
+8. W ustawieniach Ogolne -> Zaawansowane, wlaczam dwukierunkowe przeciaganie i upuszczanie oraz dwukierunkowy schowek, aby moc latwo przenosic pliki miedzy maszyna wirtualna a hostem.
+9. Nie uzywam szyfrowania dysku, poniewaz ta maszyna jest tylko do mojego uzytku i nie przechowuje tam danych poufnych.
+10. Nie zmieniam nic w zakladce "Podstawowe" i "Opis".
+11. W zakladce System -> Plyta glowna, odznaczam opcje dyskietki, poniewaz nie bede z niej korzystac. Ustawiam kolejnosc bootowania tak, aby najpierw uruchamial sie dysk twardy, a potem naped optyczny. Pozostawiam domyslny chipset PIIX3, ktory jest odpowiedni dla mojego systemu.
+12. W zakladce System Procesor, ustawiam liczbe procesorow na 1, poniewaz nie bede potrzebowac wiekszej mocy. Pozostawiam wykorzystanie procesora na 100%. Wlaczam PAE/NX, aby miec dostep do tej funkcji wewnatrz maszyny.
+13. W zakladce Audio, wylaczam dzwiek, poniewaz nie bedzie mi on potrzebny.
+14. W zakladce Siec, wybieram karte sieciowa typu NAT, aby maszyna mogla uzyskac dostep do Internetu.
+15. W zakladce Porty, nie wprowadzam zadnych zmian, poniewaz nie potrzebuje przekierowywac portow w tej maszynie.
+16. W zakladce USB, pozostawiam domyslne ustawienia, chyba ze zamierzam korzystac z urzadzen USB w maszynie wirtualne.
+Instalacja debiana
+1. Wybieram utworzona maszyne wirtualna "DebianSop" i klikam na przycisk "Uruchom", aby rozpoczac instalacje.
+2. Wskazuje sciezke do pobranego pliku instalacyjnego Debian.
+3. Wybieram instalacje bez interfejsu graficznego.
+4. Wybieram jezyk instalacji na Angielski, strefe czasowa na Polske, uklad klawiatury i inne preferencje wedlug moich potrzeb.
+5. Nadaje nazwe uzytkownika i haslo, nie potrzebuje nadawac domeny, oraz potem ustawiam haslo do konta root (admin).
+6. Podczas partycjonowania dysku, wybieram opcje automatycznego partycjonowania, jesli nie mam specjalnych wymagan dotyczacych rozmiarow partycji.
+7. Wybieram partycje, na ktorej zostanie zainstalowany system, oraz punkt montowania "/".
+8. Wybieram nazwe hosta dla mojej maszyny i ustawiam nazwe uzytkownika oraz haslo.
+9. Przy wyborze oprogramowania wybieram tylko serwer SSH
+10. Instaluje boot loader GRUB
+11. Instalacja zakończona
+
